@@ -8,22 +8,27 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <main class="flex h-screen font-serif bg-background">
-        <div class="flex max-w-lg m-auto overflow-hidden rounded-md h-fit">
+    <main class="flex min-h-screen p-4 font-serif bg-background">
+        <div class="flex flex-col m-auto overflow-hidden rounded-md md:max-w-xl md:p-0 md:flex-row h-fit">
+
             <div class="basis-1/2">
-                <img src="/src/images/image-product-desktop.jpg" alt="">
+                <img class="hidden md:block" src="/src/images/image-product-desktop.jpg" alt="">
+                <img class="block md:hidden" src="/src/images/image-product-mobile.jpg" alt="">
             </div>
-            <div class="flex flex-col justify-between p-8 bg-white basis-1/2">
+
+            <div class="flex flex-col justify-between gap-4 p-6 bg-white basis-1/2">
                 <div class="flex flex-col gap-4">
                     <span class="font-sans text-sm font-medium tracking-widest uppercase text-slate-500">Perfume</span>
                     <h3 class="text-3xl font-semibold leading-7 text-slate-800">Gabrielle Essence Eau De Parfum</h3>
                     <p class="font-sans text-sm text-slate-500">A floral, solar and voluptuos interpratation, compossed by Oliver Polge, Perfume-Creator for the House of CHANEL.</p>
                 </div>
+
                 <div class="flex flex-col gap-4">
-                    <span class="text-3xl font-bold text-primary">$149.99 <span class="text-sm font-normal line-through text-slate-400">$169.99</span></span>
+                    <div class="text-3xl font-bold text-primary">$149.99 <span class="text-sm font-normal line-through text-slate-400">$169.99</span></div>
                     <button class="flex items-center justify-center gap-2 px-4 py-3 font-sans text-sm font-semibold text-white rounded-md bg-primary"><img src="/src/images/icon-cart.svg" alt="Cart Icon" class="max-w-4 max-h-4">Add to Cart</button>
                 </div>
             </div>
+
         </div>
     </main>
 </body>
