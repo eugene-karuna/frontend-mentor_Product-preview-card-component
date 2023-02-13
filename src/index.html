@@ -8,8 +8,23 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <h1 class="text-4xl text-red-700">Hallo</h1>
+    <main class="flex h-screen font-serif bg-background">
+        <div class="flex max-w-lg m-auto overflow-hidden rounded-md h-fit">
+            <div class="basis-1/2">
+                <img src="/src/images/image-product-desktop.jpg" alt="">
+            </div>
+            <div class="flex flex-col justify-between p-8 bg-white basis-1/2">
+                <div class="flex flex-col gap-4">
+                    <span class="font-sans text-sm font-medium tracking-widest uppercase text-slate-500">Perfume</span>
+                    <h3 class="text-3xl font-semibold leading-7 text-slate-800">Gabrielle Essence Eau De Parfum</h3>
+                    <p class="font-sans text-sm text-slate-500">A floral, solar and voluptuos interpratation, compossed by Oliver Polge, Perfume-Creator for the House of CHANEL.</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <span class="text-3xl font-bold text-primary">$149.99 <span class="text-sm font-normal line-through text-slate-400">$169.99</span></span>
+                    <button class="flex items-center justify-center gap-2 px-4 py-3 font-sans text-sm font-semibold text-white rounded-md bg-primary"><img src="/src/images/icon-cart.svg" alt="Cart Icon" class="max-w-4 max-h-4">Add to Cart</button>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html></html>
